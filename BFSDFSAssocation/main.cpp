@@ -27,6 +27,26 @@ void BFS(string root)
         }
     }
 }
+void DFS(string root)
+{
+    vector<string> visited; 
+    vector<string> current;
+    current.push_back(root); 
+    while(current.size() > 0)
+    {
+        string cur = current[current.size() - 1];
+        current.pop_back();
+        if(find(visited.begin(), visited.end(), cur) == visited.end())
+        {
+            cout<<cur; 
+            for(int i = 0; i < AssocationTree[cur].size(); i++)
+            {
+                current.push_back(AssocationTree[cur][i]);
+            }
+            visited.push_back(cur); 
+        }
+    }
+}
 
 int main()
 {
@@ -79,6 +99,12 @@ int main()
             string l;
             cin >> l; 
             BFS(l);
+        }
+        else if(x==4)
+        {
+            string l;
+            cin >> l; 
+            DFS(l);
         }
     }
 }
