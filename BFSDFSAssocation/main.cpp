@@ -27,15 +27,15 @@ void BFS(string root)
         }
     }
 }
-void DFS(string root)
+void BFS(string root)
 {
     vector<string> visited; 
     vector<string> current;
     current.push_back(root); 
     while(current.size() > 0)
     {
-        string cur = current[current.size() - 1];
-        current.pop_back();
+        string cur = current[0];
+        current.erase(current.begin());
         if(find(visited.begin(), visited.end(), cur) == visited.end())
         {
             cout<<cur; 
@@ -99,12 +99,6 @@ int main()
             string l;
             cin >> l; 
             BFS(l);
-        }
-        else if(x==4)
-        {
-            string l;
-            cin >> l; 
-            DFS(l);
         }
     }
 }
