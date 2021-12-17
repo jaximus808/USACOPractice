@@ -1,0 +1,33 @@
+
+Need to Learn algorithms:
+Silver:
+	1. BFS/DFS (Depth/Breadth first searches): done
+	2. prefix sum: done
+	3. Floodfill: done
+	4. Greedy Algorithm: done
+	5. Ad Hoc Problems
+		These problems don't have standard solutions
+Gold:
+	1. Dijkstra: 
+	2. Minimum Spanning Tree
+	3. Dynamic programmin
+	4. Greedy
+	5. Ad Hoc Problems
+		These problems don't have standard solutions
+
+
+Plat:
+	1. Data structures: 
+		segment tree: done
+		fenwick tree: 
+		disjoint sets
+		Heavy-Light Decomposition
+	2.  Greedy, dynamic programming, and data structures combined:
+	3. Graph Algorithms 
+		Least common ancestors 
+		others
+	4. Computational Geomtry
+	5. Ad Hoc Problems
+		These problems don't have standard solutions
+
+
