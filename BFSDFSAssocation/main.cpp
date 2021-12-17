@@ -76,7 +76,9 @@ int main()
         }
         else if(x == 3)
         {
-
+            string l;
+            cin >> l; 
+            BFS(l);
         }
     }
 }
