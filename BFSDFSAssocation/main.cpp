@@ -27,6 +27,26 @@ void BFS(string root)
         }
     }
 }
+void BFS(string root)
+{
+    vector<string> visited; 
+    vector<string> current;
+    current.push_back(root); 
+    while(current.size() > 0)
+    {
+        string cur = current[0];
+        current.erase(current.begin());
+        if(find(visited.begin(), visited.end(), cur) == visited.end())
+        {
+            cout<<cur; 
+            for(int i = 0; i < AssocationTree[cur].size(); i++)
+            {
+                current.push_back(AssocationTree[cur][i]);
+            }
+            visited.push_back(cur); 
+        }
+    }
+}
 
 int main()
 {
