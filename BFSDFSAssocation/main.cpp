@@ -60,6 +60,7 @@ int main()
             if(AssocationTree.find(l) == AssocationTree.end())
             {
                 cout << "node does not exist";
+                break;
             }
             else
             {
@@ -67,7 +68,7 @@ int main()
                 {
                     string con;
                     cin >> con; 
-                    if(find(AssocationTree.begin(), AssocationTree.end(), con) == AssocationTree.end())
+                    if(find(AssocationTree[l].begin(), AssocationTree[l].end(), con) == AssocationTree[l].end())
                     {
                         AssocationTree[l].push_back(con); 
                     }
