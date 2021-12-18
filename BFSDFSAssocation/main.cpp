@@ -27,7 +27,7 @@ void BFS(string root)
         }
     }
 }
-void BFS(string root)
+void DFS(string root)
 {
     vector<string> visited; 
     vector<string> current;
@@ -35,6 +35,7 @@ void BFS(string root)
     while(current.size() > 0)
     {
         string cur = current[0];
+        //cout << "dick: "<<cur;
         current.erase(current.begin());
         if(find(visited.begin(), visited.end(), cur) == visited.end())
         {
@@ -101,5 +102,30 @@ int main()
             cin >> l; 
             BFS(l);
         }
+        else if(x == 4)
+        {
+            string l;
+            cin >> l; 
+            DFS(l);
+        }
     }
 }
+// 1 a
+// 1 b 
+// 1 c
+// 1 d
+// 1 e
+// 1 g
+// 1 z
+// 1 x
+// 1 y
+// 1 q
+// 1 u
+// 2 a 2 b c
+// 2 b 2 d e
+// 2 e 1 g
+// 2 g 1 z
+// 2 c 1 x 
+// 2 x 2 y q 
+// 2 q 1 u
+// 2 u 1 y
